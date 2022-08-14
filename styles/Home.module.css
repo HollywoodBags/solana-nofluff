@@ -1,5 +1,7 @@
 .container {
   padding: 0 2rem;
+  background-color: honeydew;
+
 }
 
 .main {
@@ -8,17 +10,53 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
-.footer {
+.walletButtons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.walletInfo {
   display: flex;
   flex: 1;
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+}
+
+.tokens {
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+  Bitstream Vera Sans Mono, Courier New, monospace;
+  font-size: 0.75rem;
+  padding: 15px;
+  text-align: 'center'
+}
+
+.transactions {
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+  Bitstream Vera Sans Mono, Courier New, monospace;
+  font-size: 0.75rem;
+}
+
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding-top: 150px;
+  justify-content: center;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+  Bitstream Vera Sans Mono, Courier New, monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  color: darkgreen;
+  align-items: center;
+  background-color: honeydew;
 }
 
 .footer a {

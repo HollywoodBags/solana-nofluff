@@ -1,8 +1,20 @@
-import '../styles/globals.css'
+// import '../styles/globals.css'
 import type { AppProps } from 'next/app'
+import WalletContextProvider from '../src/components/WalletContextProvider';
+import { FC } from 'react';
+import {ChakraProvider} from "@chakra-ui/provider";
+import {WalletDisconnectButton, WalletMultiButton} from "@solana/wallet-adapter-react-ui";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+require('@solana/wallet-adapter-react-ui/styles.css');
 
-export default MyApp
+const App: FC<AppProps> = ({ Component, pageProps }) => {
+  return (
+      <WalletContextProvider>
+          <ChakraProvider>
+          <Component {...pageProps} />
+          </ChakraProvider>
+      </WalletContextProvider>
+  );
+};
+
+export default App
